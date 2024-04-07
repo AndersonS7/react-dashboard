@@ -4,7 +4,7 @@ import { User } from "../user"
 
 const Menu = () => {
     return (
-        <div className="bg-red-400 flex flex-auto flex-col items-center">
+        <div className="flex flex-auto flex-col h-full items-center bg-red-400">
             <User />
             <TitlePage title="Aroldo Gomes" email="aroldo@gmail.com" />
             <NavBar />
