@@ -1,47 +1,129 @@
 {
-    "profit": [
+    "partners": [
         {
             "name": "Loja 01",
-            "jan": "5025",
-            "fev": "4332"
+            "customerbase": 784444,
+            "month": {
+                "janeiro": 6789,
+                "fevereiro": 7890,
+                "março": 8901,
+                "abril": 9012,
+                "maio": 5678,
+                "junho": 6789,
+                "julho": 7890,
+                "agosto": 8901,
+                "setembro": 9012,
+                "outubro": 5678,
+                "novembro": 6789,
+                "dezembro": 7890
+            },
+            "adress": {
+                "road": "rua da fofoca 01",
+                "number": "01",
+                "uf": "AA",
+                "lat": "8.5555",
+                "long": "35.8888"
+            }
         },
         {
             "name": "Loja 02",
-            "jan": "7025",
-            "fev": "5332"
+            "customerbase": 683333,
+            "month": {
+                "janeiro": 8901,
+                "fevereiro": 9012,
+                "março": 5678,
+                "abril": 6789,
+                "maio": 7890,
+                "junho": 8901,
+                "julho": 9012,
+                "agosto": 5678,
+                "setembro": 6789,
+                "outubro": 7890,
+                "novembro": 8901,
+                "dezembro": 9012
+            },
+            "adress": {
+                "road": "rua da fofoca 02",
+                "number": "02",
+                "uf": "BB",
+                "lat": "8.5555",
+                "long": "35.8888"
+            }
         },
         {
             "name": "Loja 03",
-            "jan": "4025",
-            "fev": "4332"
+            "customerbase": 582222,
+            "month": {
+                "janeiro": 5678,
+                "fevereiro": 6789,
+                "março": 7890,
+                "abril": 8901,
+                "maio": 9012,
+                "junho": 5678,
+                "julho": 6789,
+                "agosto": 7890,
+                "setembro": 8901,
+                "outubro": 9012,
+                "novembro": 5678,
+                "dezembro": 6789
+            },
+            "adress": {
+                "road": "rua da fofoca 03",
+                "number": "03",
+                "uf": "CC",
+                "lat": "8.5555",
+                "long": "35.8888"
+            }
         },
         {
             "name": "Loja 04",
-            "jan": "6025",
-            "fev": "5332"
+            "customerbase": 225555,
+            "month": {
+                "janeiro": 7890,
+                "fevereiro": 8901,
+                "março": 9012,
+                "abril": 5678,
+                "maio": 6789,
+                "junho": 7890,
+                "julho": 8901,
+                "agosto": 9012,
+                "setembro": 5678,
+                "outubro": 6789,
+                "novembro": 7890,
+                "dezembro": 8901
+            },
+            "adress": {
+                "road": "rua da fofoca 04",
+                "number": "04",
+                "uf": "DD",
+                "lat": "8.5555",
+                "long": "35.8888"
+            }
         },
         {
             "name": "Loja 05",
-            "jan": "3025",
-            "fev": "4332"
-        },
-        {
-            "name": "Loja 06",
-            "jan": "5025",
-            "fev": "4332"
-        },
-        {
-            "name": "Loja 07",
-            "jan": "8025",
-            "fev": "7332"
-        },
-        {
-            "name": "Loja 08",
-            "jan": "7025",
-            "fev": "6332"
+            "customerbase": 358888,
+            "month": {
+                "janeiro": 9012,
+                "fevereiro": 5678,
+                "março": 6789,
+                "abril": 7890,
+                "maio": 8901,
+                "junho": 9012,
+                "julho": 5678,
+                "agosto": 6789,
+                "setembro": 7890,
+                "outubro": 8901,
+                "novembro": 9012,
+                "dezembro": 5678
+            },
+            "adress": {
+                "road": "rua da fofoca 05",
+                "number": "05",
+                "uf": "EE",
+                "lat": "8.5555",
+                "long": "35.8888"
+            }
         }
-    ],
-    "adress": [
-        
     ]
 }
