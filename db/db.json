@@ -2,7 +2,7 @@
     "partners": [
         {
             "name": "Loja 01",
-            "customerbase": 784444,
+            "customerbase": 88520,
             "month": {
                 "janeiro": 6789,
                 "fevereiro": 7890,
@@ -27,7 +27,7 @@
         },
         {
             "name": "Loja 02",
-            "customerbase": 683333,
+            "customerbase": 10235,
             "month": {
                 "janeiro": 8901,
                 "fevereiro": 9012,
@@ -52,7 +52,7 @@
         },
         {
             "name": "Loja 03",
-            "customerbase": 582222,
+            "customerbase": 9235,
             "month": {
                 "janeiro": 5678,
                 "fevereiro": 6789,
@@ -77,7 +77,7 @@
         },
         {
             "name": "Loja 04",
-            "customerbase": 225555,
+            "customerbase": 12899,
             "month": {
                 "janeiro": 7890,
                 "fevereiro": 8901,
@@ -102,7 +102,7 @@
         },
         {
             "name": "Loja 05",
-            "customerbase": 358888,
+            "customerbase": 9253,
             "month": {
                 "janeiro": 9012,
                 "fevereiro": 5678,

@@ -1,25 +1,16 @@
 //import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import db from "../../../db/db.json";
+import { useData } from '../../context/data.context';
 
 const LineGraph = () => {
-
-    const data = db.partners.map(store => ({
-        name: store.name,
-        jan: store.month.janeiro,
-        fev: store.month.fevereiro
-    }))
-
-    // const customerbase = db.partners.map(store => ({
-    //     customer: store.customerbase
-    // }))
+    const { usedata } = useData()
 
     return (
         <ResponsiveContainer width="100%" height="100%">
             <LineChart
                 width={500}
                 height={300}
-                data={data}
+                data={usedata}
                 margin={{
                     top: 5,
                     right: 30,

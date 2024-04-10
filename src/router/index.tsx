@@ -3,7 +3,7 @@ import { Mapa } from "../pages/mapa";
 import { Dashboard } from "../pages/dashboard";
 import { Register } from "../pages/novoparceiro";
 
-const Rotas = () => {
+const AppRouter = () => {
     return (
         <BrowserRouter>
             <Routes>
@@ -15,4 +15,4 @@ const Rotas = () => {
     )
 }
 
-export { Rotas }
+export { AppRouter }

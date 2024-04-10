@@ -2,8 +2,11 @@
 // import App from './App.tsx'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { Rotas } from './router/index.tsx'
+import { AppRouter } from './router/index.tsx'
+import { DataProvider } from './context/data.context.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <Rotas />
+  <DataProvider>
+    <AppRouter />
+  </DataProvider>
 )
