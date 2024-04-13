@@ -1,13 +1,18 @@
 interface IProps {
     title: string
-    value: string
+    value: number
+    icon: any
 }
 
-const Card = ({ title, value }: IProps) => {
+const Card = ({ title, value, icon }: IProps) => {
     return (
-        <div className="flex flex-col justify-center items-center w-5/6 bg-gray-200">
-            <h2 className="text-start w-full h-1/4 bg-gray-400">{title}</h2>
-            <p className="text-center text-5xl w-full h-3/4 bg-gray-600">{value}</p>
+        <div className="flex flex-col justify-start p-8 h-72 w-96 drop-shadow-lg
+        bg-white text-sky-900">
+            <div className="flex items-center justify-between">
+                <h2 className="text-2xl">{title}</h2>
+                {icon}
+            </div>
+            <p className="text-7xl mt-12">{value}</p>
         </div>
     )
 }

@@ -3,14 +3,18 @@ import db from "../../db/db.json";
 
 interface IData {
     usedata: Array<object>,
-    customerbase: Array<object>
-    summonths: Array<number>
+    customerbase: Array<number>
+    summonths: Array<number>,
+    conversion: Array<number>,
+    before: Array<number>
 }
 
 const DATA_CONTEXT_DEFAULT_VALUE: IData = {
     usedata: [],
     customerbase: [],
-    summonths: []
+    summonths: [],
+    conversion: [],
+    before: []
 }
 
 const DataContext = createContext<IData>(DATA_CONTEXT_DEFAULT_VALUE);
@@ -27,9 +31,9 @@ const DataProvider = ({ children }: IDataProvider) => {
         fev: store.month.fevereiro
     }))
 
-    const customerbase = db.partners.map(store => ({
-        custome: store.customerbase
-    }))
+    const customerbase = db.partners.map(store => store.customerbase)
+    const conversion = db.partners.map(store => store.conversion)
+    const before = db.partners.map(store => store.before)
 
     const summonths = db.partners.map(store => (
         Object.values(store.month).reduce((a, b) => a + b, 0)
@@ -40,7 +44,9 @@ const DataProvider = ({ children }: IDataProvider) => {
             value={{
                 usedata,
                 customerbase,
-                summonths
+                summonths,
+                conversion,
+                before
             }}
         >
             {children}
