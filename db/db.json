@@ -1,7 +1,8 @@
 {
     "partners": [
         {
-            "name": "Loja 01",
+            "id": "0",
+            "name": "Loja 3 irmãos",
             "customerbase": 8520,
             "conversion": 2.8,
             "before": 1.2,
@@ -19,16 +20,25 @@
                 "novembro": 6789,
                 "dezembro": 7890
             },
+            "contact": {
+                "phone": "(88)8888-8888",
+                "email": "emailloja@gmail.com"
+            },
             "adress": {
-                "road": "rua da fofoca 01",
-                "number": "01",
-                "uf": "AA",
-                "lat": "8.5555",
-                "long": "35.8888"
+                "road": "Av. Bernardo Manuel",
+                "number": "270",
+                "zone": "Parque Dois Irmãos",
+                "city": "Fortaleza",
+                "uf": "CE",
+                "center": {
+                    "lat": -3.793434,
+                    "lng": -38.549754
+                }
             }
         },
         {
-            "name": "Loja 02",
+            "id": "1",
+            "name": "Tech Store",
             "customerbase": 9235,
             "conversion": 3,
             "before": 6.2,
@@ -46,16 +56,25 @@
                 "novembro": 8901,
                 "dezembro": 9012
             },
+            "contact": {
+                "phone": "(88)8888-8888",
+                "email": "emailloja@gmail.com"
+            },
             "adress": {
-                "road": "rua da fofoca 02",
-                "number": "02",
-                "uf": "BB",
-                "lat": "8.5555",
-                "long": "35.8888"
+                "road": "R. Barreiros",
+                "number": "102",
+                "zone": "Felipe Camarão",
+                "city": "Natal",
+                "uf": "RN",
+                "center": {
+                    "lat": -5.823263,
+                    "lng": -35.253476
+                }
             }
         },
         {
-            "name": "Loja 03",
+            "id": "2",
+            "name": "Tech Byte",
             "customerbase": 5685,
             "conversion": 7.1,
             "before": 6.4,
@@ -73,16 +92,25 @@
                 "novembro": 5678,
                 "dezembro": 6789
             },
+            "contact": {
+                "phone": "(88)8888-8888",
+                "email": "emailloja@gmail.com"
+            },
             "adress": {
-                "road": "rua da fofoca 03",
-                "number": "03",
-                "uf": "CC",
-                "lat": "8.5555",
-                "long": "35.8888"
+                "road": "R. da Garoupa",
+                "number": "161",
+                "zone": "Pajuçara",
+                "city": "Natal",
+                "uf": "RN",
+                "center": {
+                    "lat": -5.732538,
+                    "lng": -35.236544
+                }
             }
         },
         {
-            "name": "Loja 04",
+            "id": "3",
+            "name": "Circuito Aberto",
             "customerbase": 11899,
             "conversion": 2.4,
             "before": 7.4,
@@ -100,16 +128,25 @@
                 "novembro": 7890,
                 "dezembro": 8901
             },
+            "contact": {
+                "phone": "(88)8888-8888",
+                "email": "emailloja@gmail.com"
+            },
             "adress": {
-                "road": "rua da fofoca 04",
-                "number": "04",
-                "uf": "DD",
-                "lat": "8.5555",
-                "long": "35.8888"
+                "road": "Av. Luís Lopes Varela",
+                "number": "20",
+                "zone": "Centro",
+                "city": "Ceará-Mirim",
+                "uf": "RN",
+                "center": {
+                    "lat": -5.652074,
+                    "lng": -35.418688
+                }
             }
         },
         {
-            "name": "Loja 05",
+            "id": "4",
+            "name": "Nano tech",
             "customerbase": 9253,
             "conversion": 8.2,
             "before": 5.7,
@@ -127,12 +164,20 @@
                 "novembro": 9012,
                 "dezembro": 5678
             },
+            "contact": {
+                "phone": "(88)8888-8888",
+                "email": "emailloja@gmail.com"
+            },
             "adress": {
-                "road": "rua da fofoca 05",
-                "number": "05",
-                "uf": "EE",
-                "lat": "8.5555",
-                "long": "35.8888"
+                "road": "Rod. Br 222",
+                "number": "155",
+                "zone": "Parque Soledade",
+                "city": "Caucaia",
+                "uf": "CE",
+                "center": {
+                    "lat": -3.739666,
+                    "lng": -38.638004
+                }
             }
         }
     ]
