@@ -11,6 +11,7 @@ interface IData {
     names: Array<string>
     adress: Array<any>
     contact: Array<any>
+    idStore: Array<string>
 }
 
 const DATA_CONTEXT_DEFAULT_VALUE: IData = {
@@ -22,7 +23,8 @@ const DATA_CONTEXT_DEFAULT_VALUE: IData = {
     months: [],
     names: [],
     adress: [],
-    contact: []
+    contact: [],
+    idStore: []
 }
 
 const DataContext = createContext<IData>(DATA_CONTEXT_DEFAULT_VALUE);
@@ -49,6 +51,7 @@ const DataProvider = ({ children }: IDataProvider) => {
         // dez: store.month.dezembro
     }))
 
+    const idStore = db.partners.map(store => store.id)
     const adress = db.partners.map(store => store.adress)
     const contact = db.partners.map(store => store.contact)
 
@@ -64,6 +67,7 @@ const DataProvider = ({ children }: IDataProvider) => {
     return (
         <DataContext.Provider
             value={{
+                idStore,
                 usedata,
                 customerbase,
                 summonths,

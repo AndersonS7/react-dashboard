@@ -11,7 +11,7 @@ const PageMap = ({ children, center }: IProps) => {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "XXX"//API_KEY
+        googleMapsApiKey: API_KEY
     })
 
 

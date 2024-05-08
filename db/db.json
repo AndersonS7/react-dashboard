@@ -1,184 +1,148 @@
 {
-    "partners": [
-        {
-            "id": "0",
-            "name": "Loja 3 irmãos",
-            "customerbase": 8520,
-            "conversion": 2.8,
-            "before": 1.2,
-            "month": {
-                "janeiro": 6789,
-                "fevereiro": 7890,
-                "março": 8901,
-                "abril": 9012,
-                "maio": 5678,
-                "junho": 6789,
-                "julho": 7890,
-                "agosto": 8901,
-                "setembro": 9012,
-                "outubro": 5678,
-                "novembro": 6789,
-                "dezembro": 7890
-            },
-            "contact": {
-                "phone": "(88)8888-8888",
-                "email": "emailloja@gmail.com"
-            },
-            "adress": {
-                "road": "Av. Bernardo Manuel",
-                "number": "270",
-                "zone": "Parque Dois Irmãos",
-                "city": "Fortaleza",
-                "uf": "CE",
-                "center": {
-                    "lat": -3.793434,
-                    "lng": -38.549754
-                }
-            }
-        },
-        {
-            "id": "1",
-            "name": "Tech Store",
-            "customerbase": 9235,
-            "conversion": 3,
-            "before": 6.2,
-            "month": {
-                "janeiro": 8901,
-                "fevereiro": 9012,
-                "março": 5678,
-                "abril": 6789,
-                "maio": 7890,
-                "junho": 8901,
-                "julho": 9012,
-                "agosto": 5678,
-                "setembro": 6789,
-                "outubro": 7890,
-                "novembro": 8901,
-                "dezembro": 9012
-            },
-            "contact": {
-                "phone": "(88)8888-8888",
-                "email": "emailloja@gmail.com"
-            },
-            "adress": {
-                "road": "R. Barreiros",
-                "number": "102",
-                "zone": "Felipe Camarão",
-                "city": "Natal",
-                "uf": "RN",
-                "center": {
-                    "lat": -5.823263,
-                    "lng": -35.253476
-                }
-            }
-        },
-        {
-            "id": "2",
-            "name": "Tech Byte",
-            "customerbase": 5685,
-            "conversion": 7.1,
-            "before": 6.4,
-            "month": {
-                "janeiro": 5678,
-                "fevereiro": 6789,
-                "março": 7890,
-                "abril": 8901,
-                "maio": 9012,
-                "junho": 5678,
-                "julho": 6789,
-                "agosto": 7890,
-                "setembro": 8901,
-                "outubro": 9012,
-                "novembro": 5678,
-                "dezembro": 6789
-            },
-            "contact": {
-                "phone": "(88)8888-8888",
-                "email": "emailloja@gmail.com"
-            },
-            "adress": {
-                "road": "R. da Garoupa",
-                "number": "161",
-                "zone": "Pajuçara",
-                "city": "Natal",
-                "uf": "RN",
-                "center": {
-                    "lat": -5.732538,
-                    "lng": -35.236544
-                }
-            }
-        },
-        {
-            "id": "3",
-            "name": "Circuito Aberto",
-            "customerbase": 11899,
-            "conversion": 2.4,
-            "before": 7.4,
-            "month": {
-                "janeiro": 7890,
-                "fevereiro": 8901,
-                "março": 9012,
-                "abril": 5678,
-                "maio": 6789,
-                "junho": 7890,
-                "julho": 8901,
-                "agosto": 9012,
-                "setembro": 5678,
-                "outubro": 6789,
-                "novembro": 7890,
-                "dezembro": 8901
-            },
-            "contact": {
-                "phone": "(88)8888-8888",
-                "email": "emailloja@gmail.com"
-            },
-            "adress": {
-                "road": "Av. Luís Lopes Varela",
-                "number": "20",
-                "zone": "Centro",
-                "city": "Ceará-Mirim",
-                "uf": "RN",
-                "center": {
-                    "lat": -5.652074,
-                    "lng": -35.418688
-                }
-            }
-        },
-        {
-            "id": "4",
-            "name": "Nano tech",
-            "customerbase": 9253,
-            "conversion": 8.2,
-            "before": 5.7,
-            "month": {
-                "janeiro": 9012,
-                "fevereiro": 5678,
-                "março": 6789,
-                "abril": 7890,
-                "maio": 8901,
-                "junho": 9012,
-                "julho": 5678,
-                "agosto": 6789,
-                "setembro": 7890,
-                "outubro": 8901,
-                "novembro": 9012,
-                "dezembro": 5678
-            },
-            "contact": {
-                "phone": "(88)8888-8888",
-                "email": "emailloja@gmail.com"
-            },
-            "adress": {
-                "road": "Rod. Br 222",
-                "number": "155",
-                "zone": "Parque Soledade",
-                "city": "Caucaia",
-                "uf": "CE",
-                "center": {
-                    "lat": -3.739666,
-                    "lng": -38.638004
-                }
-            }
+  "partners": [
+    {
+      "id": "1",
+      "name": "Tech Store",
+      "customerbase": 9235,
+      "conversion": 3,
+      "before": 6.2,
+      "month": {
+        "janeiro": 8901,
+        "fevereiro": 9012,
+        "março": 5678,
+        "abril": 6789,
+        "maio": 7890,
+        "junho": 8901,
+        "julho": 9012,
+        "agosto": 5678,
+        "setembro": 6789,
+        "outubro": 7890,
+        "novembro": 8901,
+        "dezembro": 9012
+      },
+      "contact": {
+        "phone": "(88)8888-8888",
+        "email": "emailloja@gmail.com"
+      },
+      "adress": {
+        "road": "R. Barreiros",
+        "number": "102",
+        "zone": "Felipe Camarão",
+        "city": "Natal",
+        "uf": "RN",
+        "center": {
+          "lat": -5.823263,
+          "lng": -35.253476
         }
-    ]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Tech Byte",
+      "customerbase": 5685,
+      "conversion": 7.1,
+      "before": 6.4,
+      "month": {
+        "janeiro": 5678,
+        "fevereiro": 6789,
+        "março": 7890,
+        "abril": 8901,
+        "maio": 9012,
+        "junho": 5678,
+        "julho": 6789,
+        "agosto": 7890,
+        "setembro": 8901,
+        "outubro": 9012,
+        "novembro": 5678,
+        "dezembro": 6789
+      },
+      "contact": {
+        "phone": "(88)8888-8888",
+        "email": "emailloja@gmail.com"
+      },
+      "adress": {
+        "road": "R. da Garoupa",
+        "number": "161",
+        "zone": "Pajuçara",
+        "city": "Natal",
+        "uf": "RN",
+        "center": {
+          "lat": -5.732538,
+          "lng": -35.236544
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Circuito Aberto",
+      "customerbase": 11899,
+      "conversion": 2.4,
+      "before": 7.4,
+      "month": {
+        "janeiro": 7890,
+        "fevereiro": 8901,
+        "março": 9012,
+        "abril": 5678,
+        "maio": 6789,
+        "junho": 7890,
+        "julho": 8901,
+        "agosto": 9012,
+        "setembro": 5678,
+        "outubro": 6789,
+        "novembro": 7890,
+        "dezembro": 8901
+      },
+      "contact": {
+        "phone": "(88)8888-8888",
+        "email": "emailloja@gmail.com"
+      },
+      "adress": {
+        "road": "Av. Luís Lopes Varela",
+        "number": "20",
+        "zone": "Centro",
+        "city": "Ceará-Mirim",
+        "uf": "RN",
+        "center": {
+          "lat": -5.652074,
+          "lng": -35.418688
+        }
+      }
+    },
+    {
+      "id": "FTuTbrMBHwQTKidSDYMJe",
+      "name": "Loja Padrão",
+      "customerbase": 8888,
+      "conversion": 8,
+      "before": 5,
+      "month": {
+        "janeiro": 8888,
+        "fevereiro": 8888,
+        "março": 8888,
+        "abril": 8888,
+        "maio": 8888,
+        "junho": 8888,
+        "julho": 8888,
+        "agosto": 8888,
+        "setembro": 8888,
+        "outubro": 8888,
+        "novembro": 8888,
+        "dezembro": 8888
+      },
+      "contact": {
+        "phone": 23131231,
+        "email": "aaaaa@aaaaa"
+      },
+      "adress": {
+        "road": "aaaaaaa",
+        "number": 122,
+        "zone": "aaaaa",
+        "city": "aaaaa",
+        "uf": "aa",
+        "center": {
+          "lat": -6.207654,
+          "lng": -38.49946
+        }
+      }
+    }
+  ]
 }
