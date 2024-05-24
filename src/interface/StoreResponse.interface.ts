@@ -1,4 +1,6 @@
 export interface IInputs {
+    nameStore: string
+    customerbase: number
     rua: string
     numero: number
     bairro: string
@@ -6,6 +8,8 @@ export interface IInputs {
     uf: string
     celular: number
     email: string
+    lati: number
+    long: number
 }
 
 export interface StoreData {

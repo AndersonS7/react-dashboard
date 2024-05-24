@@ -7,8 +7,8 @@ import PageMap from "../../components/map";
 import { useEffect, useState } from "react";
 import * as yup from "yup";
 import { useStore } from "../../context/protocol.context";
-import { IInputs } from "../../interface/StoreResponse.interface";
 import { useLocation, useNavigate } from "react-router-dom";
+import { IInputs, StoreInfo } from "../../interface/StoreResponse.interface";
 
 const schema = yup.object({
     id: yup.string(),
@@ -25,24 +25,33 @@ const schema = yup.object({
     long: yup.number().required('longitude não selecionada')
 }).required()
 
-const Register = () => {
+const EditStore = () => {
     const [lat, setLat] = useState(0);
     const [lng, setLng] = useState(0);
 
     const navigate = useNavigate();
-    const { handleCreateStore } = useStore();
+    const location = useLocation();
+    const storeData = location.state.store
+    const { handleEditStore } = useStore();
 
     const onSubmitStore = (data: IInputs) => {
-        handleCreateStore(data).then(() => navigate('/register'))
+        handleEditStore(storeData.id, storeData, data).then(() => navigate('/mapa'))
     }
 
     const handleGetCoordenations = (latitude: number, longitude: number) => {
         setLat(latitude);
         setLng(longitude);
-
         setValue('lati', latitude);
         setValue('long', longitude);
     }
+
+    // as coordenadas não estão atualizando
+    useEffect(() => {
+        setLat(storeData.adress.center.lat)
+        setLng(storeData.adress.center.lng)
+        setValue('lati', storeData.adress.center.lat);
+        setValue('long', storeData.adress.center.lng);
+    }, [storeData]);
 
     const {
         register,
@@ -54,13 +63,6 @@ const Register = () => {
         mode: 'onChange'
     })
 
-    useEffect(() => {
-        navigator.geolocation.getCurrentPosition(pos => {
-            setLat(pos.coords.latitude);
-            setLng(pos.coords.longitude);
-        })
-    }, [])
-
     return (
         <div className='grid grid-cols-12 grid-flow-col h-screen bg-gray-200'>
             <div className="col-span-2 bg-sky-800">
@@ -71,18 +73,18 @@ const Register = () => {
                     <div className="flex flex-col gap-4 2xl:gap-8">
                         <span className=" bg-amber-400 text-sky-900/70 italic p-2">* Todos os campos são obrigatórios</span>
                         <form className="flex flex-col gap-2 2xl:gap-4" onSubmit={handleSubmit(onSubmitStore)}>
-                            <InputPage error={errors.nameStore} register={register} name="nameStore" mtype="text" mplaceholder="Nome da loja" />
-                            <InputPage error={errors.customerbase} register={register} name="customerbase" mtype="number" mplaceholder="Base de cliente" />
+                            <InputPage defaultValue={storeData.name} error={errors.nameStore} register={register} name="nameStore" mtype="text" mplaceholder="Nome da loja" />
+                            <InputPage defaultValue={storeData.customerbase} error={errors.customerbase} register={register} name="customerbase" mtype="number" mplaceholder="Base de cliente" />
 
-                            <InputPage error={errors.rua} register={register} name="rua" mtype="text" mplaceholder="Rua" />
-                            <InputPage error={errors.numero} register={register} name="numero" mtype="number" mplaceholder="Número" />
-                            <InputPage error={errors.bairro} register={register} name="bairro" mtype="text" mplaceholder="Bairro" />
+                            <InputPage defaultValue={storeData.adress.road} error={errors.rua} register={register} name="rua" mtype="text" mplaceholder="Rua" />
+                            <InputPage defaultValue={storeData.adress.number} error={errors.numero} register={register} name="numero" mtype="number" mplaceholder="Número" />
+                            <InputPage defaultValue={storeData.adress.zone} error={errors.bairro} register={register} name="bairro" mtype="text" mplaceholder="Bairro" />
                             <div className="flex flex-row justify-between gap-8">
-                                <InputPage error={errors.cidade} register={register} name="cidade" mtype="text" mplaceholder="Cidade" />
-                                <InputPage error={errors.uf} register={register} name="uf" mtype="text" mplaceholder="UF" />
+                                <InputPage defaultValue={storeData.adress.city} error={errors.cidade} register={register} name="cidade" mtype="text" mplaceholder="Cidade" />
+                                <InputPage defaultValue={storeData.adress.uf} error={errors.uf} register={register} name="uf" mtype="text" mplaceholder="UF" />
                             </div>
-                            <InputPage error={errors.celular} register={register} name="celular" mtype="number" mplaceholder="Celular" />
-                            <InputPage error={errors.email} register={register} name="email" mtype="text" mplaceholder="E-Mail" />
+                            <InputPage defaultValue={storeData.contact.phone} error={errors.celular} register={register} name="celular" mtype="number" mplaceholder="Celular" />
+                            <InputPage defaultValue={storeData.contact.email} error={errors.email} register={register} name="email" mtype="text" mplaceholder="E-Mail" />
                             <div className="flex flex-col gap-4">
                                 <p className=" bg-amber-400 text-sky-900/70 italic p-2">* Clique no mapa para registrar o local da loja</p>
                                 <div className="flex mb-4 w-1/2 text-gray-500/50">
@@ -102,4 +104,4 @@ const Register = () => {
     )
 }
 
-export { Register }
+export { EditStore }

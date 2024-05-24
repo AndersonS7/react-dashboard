@@ -2,13 +2,14 @@ import { createContext, useCallback, useContext, useEffect, useState } from "rea
 import { IInputs, StoreData, StoreInfo } from "../interface/StoreResponse.interface";
 import { edit, excluir, postStore } from "../service/axios.service";
 import { nanoid } from "nanoid";
+import { takeCoverage } from "v8";
 
 interface IStoreContext {
     list: StoreData[];
     setList: (list: StoreData) => void;
     handleCreateStore: (data: IInputs) => any;
     handleDeleteStore: (id: string) => void;
-    handleEditStore: (storeId: string, dataStore: StoreInfo) => any //StoreInfo
+    handleEditStore: (storeId: string, dataStore: StoreInfo, data: IInputs) => any //StoreInfo
 }
 
 const USER_CONTEX_DEFAULT_VALUES = {
@@ -28,36 +29,46 @@ interface IStoreProvider {
 const StoreProtocolProvider = ({ children }: IStoreProvider) => {
     const [list, setList] = useState<any>([])
 
+    const drawNumber = (min: number, max: number) => {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
     const handleCreateStore = useCallback(async (data: IInputs) => {
         try {
+            const nameStore = data.nameStore;
+            const customerbase = data.customerbase;
             const rua = data.rua;
             const numero = data.numero;
             const bairro = data.bairro;
             const cidade = data.cidade;
             const uf = data.uf;
             const celular = data.celular;
-            const email = data.email
+            const email = data.email;
+            const lati = Number(data.lati);
+            const long = Number(data.long);
 
             await postStore(
                 {
                     id: nanoid(),
-                    name: "Loja Padrão",
-                    customerbase: 8888,
-                    conversion: 8,
-                    before: 5,
+                    name: nameStore,
+                    customerbase: customerbase,
+                    conversion: drawNumber(1, 10),
+                    before: drawNumber(1, 10),
                     month: {
-                        "janeiro": 8888,
-                        "fevereiro": 8888,
-                        "março": 8888,
-                        "abril": 8888,
-                        "maio": 8888,
-                        "junho": 8888,
-                        "julho": 8888,
-                        "agosto": 8888,
-                        "setembro": 8888,
-                        "outubro": 8888,
-                        "novembro": 8888,
-                        "dezembro": 8888
+                        "janeiro": drawNumber(1000, 9999),
+                        "fevereiro": drawNumber(1000, 9999),
+                        "março": drawNumber(1000, 9999),
+                        "abril": drawNumber(1000, 9999),
+                        "maio": drawNumber(1000, 9999),
+                        "junho": drawNumber(1000, 9999),
+                        "julho": drawNumber(1000, 9999),
+                        "agosto": drawNumber(1000, 9999),
+                        "setembro": drawNumber(1000, 9999),
+                        "outubro": drawNumber(1000, 9999),
+                        "novembro": drawNumber(1000, 9999),
+                        "dezembro": drawNumber(1000, 9999)
                     },
                     contact: {
                         phone: celular,
@@ -70,15 +81,13 @@ const StoreProtocolProvider = ({ children }: IStoreProvider) => {
                         city: cidade,
                         uf: uf,
                         center: {
-                            lat: -6.207654,
-                            lng: -38.499460
+                            lat: lati,
+                            lng: long
                         }
                     }
                 }
-
             )
 
-            console.log('Os dados foram enviados')
 
         } catch (error) {
             console.log(error)
@@ -93,9 +102,9 @@ const StoreProtocolProvider = ({ children }: IStoreProvider) => {
         }
     }, [])
 
-    const handleEditStore = useCallback(async (storeId: string, dataStore: StoreInfo) => {
+    const handleEditStore = useCallback(async (storeId: string, dataStore: StoreInfo, data: IInputs) => {
         try {
-            await edit(storeId, dataStore)
+            await edit(storeId, dataStore, data)
 
         } catch (error) {
             console.log(error)

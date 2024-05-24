@@ -22,8 +22,8 @@ const Mapa = () => {
     const { idStore } = useData();
     const { names } = useData();
     const { handleDeleteStore } = useStore();
-    // const { adress } = useData();
-    // const { contact } = useData();
+    const { adress } = useData();
+    const { contact } = useData();
 
     const navigate = useNavigate();
 
@@ -38,7 +38,6 @@ const Mapa = () => {
     const getListStore = async () => {
         const list = await getStore();
         setListStore(list.data);
-        //console.log(listStore);
     }
 
     useEffect(() => {
@@ -46,7 +45,7 @@ const Mapa = () => {
     }, [])
 
     const edit = (store: IInputs) => {
-        navigate('/register', { state: { store } })
+        navigate('/editstore', { state: { store } })
     }
 
     return (
@@ -80,14 +79,15 @@ const Mapa = () => {
                 </div>
                 <div className="grid grid-cols-4 row-span-5 gap-x-32">
                     <div className="col-span-4 drop-shadow-lg bg-blue-200">
-                        {/* <PageMap center={adress[currentStore].center}>
+                        <PageMap center={adress[currentStore].center}>
                             <InfoBoxStore adress={adress[currentStore]} contact={contact[currentStore]} name={names[currentStore]} />
-                        </PageMap> */}
+                        </PageMap>
                     </div>
                 </div>
             </div>
             <ModalStores open={isOpenModal} onClose={handleOpenControl}>
                 <ul>
+                    {/* {console.log(listStore)} LISTA COM OS DADOS DA LOJA */}
                     {listStore && listStore.map((item: any) => (
                         <li key={item.id} className="flex justify-between text-2xl p-2 mb-4 bg-sky-100">
                             <span >{item.name}</span>

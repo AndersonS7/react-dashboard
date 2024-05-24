@@ -13,6 +13,28 @@ export const getStore = async <T>(): Promise<AxiosResponse<T, any>> => {
 
 export const excluir = (id: string) => axios.delete(`${BASE_URL}/${id}`);
 
-export const edit = (id: any, dataStore: StoreInfo) => {
-    return axios.put(`${BASE_URL}/${id}`, ({ id: id, dataStore }))
+export const edit = (id: string, dataStore: StoreInfo, data: IInputs) => {
+    return axios.put(`${BASE_URL}/${id}`, ({
+        id: id,
+        "name": data.nameStore,
+        "customerbase": data.customerbase,
+        "conversion": dataStore.conversion,
+        "before": dataStore.before,
+        "month": dataStore.month,
+        "contact": {
+            "phone": data.celular,
+            "email": data.email
+        },
+        "adress": {
+            "road": data.rua,
+            "number": data.numero,
+            "zone": data.bairro,
+            "city": data.cidade,
+            "uf": data.uf,
+            "center": {
+                "lat": data.lati,
+                "lng": data.long
+            }
+        }
+    }))
 }
