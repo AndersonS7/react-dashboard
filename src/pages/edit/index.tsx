@@ -1,26 +1,26 @@
-import { yupResolver } from "@hookform/resolvers/yup";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form"
 import { InputPage } from "../../components/input";
 import { ButtonPage } from "../../components/mbutton";
 import { Menu } from "../../components/menu";
 import PageMap from "../../components/map";
-import { useEffect, useState } from "react";
+import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useStore } from "../../context/protocol.context";
 import { useLocation, useNavigate } from "react-router-dom";
-import { IInputs, StoreInfo } from "../../interface/StoreResponse.interface";
+import { IInputs } from "../../interface/StoreResponse.interface";
 
 const schema = yup.object({
     id: yup.string(),
-    nameStore: yup.string().required('Informe o nome da loja'),
-    customerbase: yup.number().required('Informe o total de cliente'),
-    rua: yup.string().required('Informe o nome da rua'),
-    numero: yup.number().min(1).positive('O número não pode ser negativo').integer().required('Informe o número'),
-    bairro: yup.string().required('Informe o bairro'),
-    cidade: yup.string().required('Informe a cidade'),
-    uf: yup.string().required('Informe o estado'),
-    celular: yup.number().integer().required('Informe o número de celular'),
-    email: yup.string().email('Informe um e-mail válido').required('Informe um email'),
+    nameStore: yup.string().max(30, "O nome não pode ter mais que 30 caracteres").required('Informe o nome da loja'),
+    customerbase: yup.number().max(99999, "Valor máximo 99999").required('Informe o total de cliente'),
+    rua: yup.string().max(30, "O nome não pode ter mais que 60 caracteres").required('Informe o nome da rua'),
+    numero: yup.number().min(1).max(9999, "Valor máximo 9999").positive('O número não pode ser negativo').integer().required('Informe o número'),
+    bairro: yup.string().max(30, "O nome não pode ter mais que 30 caracteres").required('Informe o bairro'),
+    cidade: yup.string().max(30, "O nome não pode ter mais que 30 caracteres").required('Informe a cidade'),
+    uf: yup.string().max(2, "Apenas duas letras").required('Informe o estado'),
+    celular: yup.number().max(9999999999, "Máximo 9 dígitos").integer().required('Informe o número de celular'),
+    email: yup.string().max(30, "O nome não pode ter mais que 30 caracteres").email('Informe um e-mail válido').required('Informe um email'),
     lati: yup.number().required('latitude não selecionada'),
     long: yup.number().required('longitude não selecionada')
 }).required()
@@ -45,7 +45,6 @@ const EditStore = () => {
         setValue('long', longitude);
     }
 
-    // as coordenadas não estão atualizando
     useEffect(() => {
         setLat(storeData.adress.center.lat)
         setLng(storeData.adress.center.lng)

@@ -1,9 +1,10 @@
 import PageMap from "../../components/map";
 import { Menu } from "../../components/menu";
 import { RiAddBoxFill } from "react-icons/ri";
+import { RxUpdate } from "react-icons/rx";
 import { MdDelete } from "react-icons/md";
 import { RiEditFill } from "react-icons/ri";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaStore } from "react-icons/fa";
 import { ButtonPage } from "../../components/mbutton";
 import { InfoBoxStore } from "../../components/infobox";
@@ -12,7 +13,7 @@ import { ModalStores } from "../../components/modal";
 import { getStore } from "../../service/axios.service";
 import { useStore } from "../../context/protocol.context";
 import { IInputs } from "../../interface/StoreResponse.interface";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Mapa = () => {
     const [listStore, setListStore] = useState<any>()
@@ -56,13 +57,13 @@ const Mapa = () => {
             <div className="grid col-span-10 grid-rows-6 2xl:gap-8 2xl:p-8 gap-4 p-4 grid-flow-col w-full">
                 <div className="flex justify-between items-center text-lg 2xl:text-2xl h-full text-sky-800">
                     <div className="flex h-1/4 2xl:h-1/2 gap-8 w-1/2 items-center">
-                        <ButtonPage type="button">
-                            <RiAddBoxFill className="2xl:text-4xl mr-4" />
+                        <Link to="/register" className="flex justify-center items-center p-4 w-full h-full text-base uppercase text-white active:scale-95 bg-sky-800 hover:bg-sky-700">
+                            <RiAddBoxFill className="2xl:text-2xl mr-4" />
                             Adicionar Loja
-                        </ButtonPage>
+                        </Link>
                         <ButtonPage type="button" func={() => { setOpenModal(!isOpenModal) }}>
-                            <MdDelete className="2xl:text-4xl mr-4" />
-                            Remover Loja
+                            <RxUpdate className="2xl:text-2xl mr-4" />
+                            Atualizar Loja
                         </ButtonPage>
                     </div>
                     <label className="flex justify-end w-1/2 items-center gap-4">
@@ -87,7 +88,6 @@ const Mapa = () => {
             </div>
             <ModalStores open={isOpenModal} onClose={handleOpenControl}>
                 <ul>
-                    {/* {console.log(listStore)} LISTA COM OS DADOS DA LOJA */}
                     {listStore && listStore.map((item: any) => (
                         <li key={item.id} className="flex justify-between text-2xl p-2 mb-4 bg-sky-100">
                             <span >{item.name}</span>
