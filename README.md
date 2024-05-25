@@ -1,6 +1,6 @@
 # Sistema simples de monitoramento de Lojas
 
-Resumo
+## Resumo
 Este projeto surgiu da ideia de colocar em prática alguns dos conceitos aprendidos no curso de Front-end com React da AdaTech. O projeto é um pequeno sistema de monitoramento de lojas que permite visualizar algumas informações em um painel, como o faturamento do mês, a base de clientes, as conversões de clientes e a comparação com outras lojas cadastradas.
 
 O sistema também permite o cadastro e a atualização de algumas informações da loja. Esses dados são armazenados em um arquivo JSON que simula um banco de dados por meio da biblioteca json-server.
@@ -48,7 +48,7 @@ Tailwind CSS: Uma solução para desenvolver telas de forma mais eficiente e fle
 React-icons: Foi utilizado para fornecer os ícones utilizados no projeto.
 <https://react-icons.github.io/react-icons/>
 
-Configurações
+## Configurações
 Caso queira rodar o projeto em sua máquina, basta seguir os passos a seguir.
 
 1 - Clone o projeto para sua máquina
@@ -80,8 +80,7 @@ Deve ficar assim:
 
 4 - Inicie a aplicação (copie e cole o comando abaixo no prompt)
 npm run dev
-
-
+[imagem aqui]
 
 Obs: por padrão, o vite vai usar o http://localhost:5173/
 
@@ -91,4 +90,5 @@ npm run backend
 6 - Acesse o sistema
 http://localhost:5173/
 
-Vídeo de exemplo
+## Veja o vesultado
+[vídeo aqui]
