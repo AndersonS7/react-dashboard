@@ -20,7 +20,6 @@ const Dashboard = () => {
     const { conversion } = useData();
     const { before } = useData();
     const { months } = useData();
-    //const { usedata } = useData(); // trocar o nome de usedata para details
     const { names } = useData();
 
     const summonthsConverted = summonths.map(num => {

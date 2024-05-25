@@ -42,7 +42,7 @@ const InfoBoxStore = ({ adress, name, contact }: IProps) => {
                     <div className="text-lg">
                         <h2 className="flex gap-2 items-center">
                             <FaWhatsapp className="text-xl" />
-                            {`${contact.phone}`}
+                            {contact.phone}
                         </h2>
                         <h2 className="flex gap-2 items-center">
                             <MdOutlineEmail className="text-xl" />

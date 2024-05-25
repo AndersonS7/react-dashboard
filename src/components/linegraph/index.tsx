@@ -1,4 +1,3 @@
-//import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { useData } from '../../context/data.context';
 
@@ -26,9 +25,6 @@ const LineGraph = () => {
                 <Line type="monotone" dataKey="jan" stroke="#8884d8" activeDot={{ r: 8 }} />
                 <Line type="monotone" dataKey="fev" stroke="#82ca9d" />
                 <Line type="monotone" dataKey="mar" stroke="#000080" />
-                {/* <Line type="monotone" dataKey="abr" stroke="#00FFFF" />
-                <Line type="monotone" dataKey="mai" stroke="#FF1493" />
-                <Line type="monotone" dataKey="jun" stroke="#8B0000" /> */}
             </LineChart>
         </ResponsiveContainer>
     );

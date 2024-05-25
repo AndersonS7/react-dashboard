@@ -1,8 +1,7 @@
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, useCallback, useContext, useState } from "react";
 import { IInputs, StoreData, StoreInfo } from "../interface/StoreResponse.interface";
 import { edit, excluir, postStore } from "../service/axios.service";
 import { nanoid } from "nanoid";
-import { takeCoverage } from "v8";
 
 interface IStoreContext {
     list: StoreData[];
