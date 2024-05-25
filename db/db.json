@@ -1,3 +1,112 @@
 {
-  "partners": []
+  "partners": [
+    {
+      "id": "2gkm-z2QQKB41PzfXdmKp",
+      "name": "Tech Store",
+      "customerbase": 82533,
+      "conversion": 1,
+      "before": 1,
+      "month": {
+        "janeiro": 5420,
+        "fevereiro": 1818,
+        "março": 5154,
+        "abril": 3853,
+        "maio": 7950,
+        "junho": 5098,
+        "julho": 3061,
+        "agosto": 7916,
+        "setembro": 8956,
+        "outubro": 2281,
+        "novembro": 3509,
+        "dezembro": 1082
+      },
+      "contact": {
+        "phone": 8888888888,
+        "email": "techstore@tech.com"
+      },
+      "adress": {
+        "road": "Av. Rad. Jose Lima Verde",
+        "number": 255,
+        "zone": "Barra do Ceará",
+        "city": "Fortaleza",
+        "uf": "CE",
+        "center": {
+          "lat": -3.69710858492061,
+          "lng": -38.58649429980839
+        }
+      }
+    },
+    {
+      "id": "9aQjP9oRS_gudvaFoKv6C",
+      "name": "D&F Digital",
+      "customerbase": 76222,
+      "conversion": 6,
+      "before": 5,
+      "month": {
+        "janeiro": 6789,
+        "fevereiro": 4097,
+        "março": 1845,
+        "abril": 9974,
+        "maio": 6010,
+        "junho": 6233,
+        "julho": 4007,
+        "agosto": 4381,
+        "setembro": 8557,
+        "outubro": 3746,
+        "novembro": 2511,
+        "dezembro": 6547
+      },
+      "contact": {
+        "phone": 8888888888,
+        "email": "dfdigital@digital.com"
+      },
+      "adress": {
+        "road": "Rua Américo Soares Wanderley",
+        "number": 1835,
+        "zone": "Capim Macio",
+        "city": "Natal",
+        "uf": "RN",
+        "center": {
+          "lat": -5.855670425564687,
+          "lng": -35.199853869283416
+        }
+      }
+    },
+    {
+      "id": "EEspLhR2bOU-h5k34eRif",
+      "name": "Rancho Tech",
+      "customerbase": 68222,
+      "conversion": 9,
+      "before": 9,
+      "month": {
+        "janeiro": 5935,
+        "fevereiro": 9151,
+        "março": 4387,
+        "abril": 4013,
+        "maio": 7692,
+        "junho": 3098,
+        "julho": 2840,
+        "agosto": 7942,
+        "setembro": 5835,
+        "outubro": 8108,
+        "novembro": 5996,
+        "dezembro": 8636
+      },
+      "contact": {
+        "phone": 8888888888,
+        "email": "rancho@rtech.com"
+      },
+      "adress": {
+        "road": "Rua da Matriz",
+        "number": 255,
+        "zone": "Centro",
+        "city": "Juazeiro do Norte",
+        "uf": "CE",
+        "center": {
+          "lat": -7.199955282299506,
+          "lng": -39.31495998031284
+        }
+      }
+    }
+  ]
 }
