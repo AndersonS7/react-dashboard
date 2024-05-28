@@ -84,7 +84,7 @@ Caso não tenha uma, use o link a seguir para conseguir uma. [API Google](https:
 
 > VITE_SOME_API_KEY = "KEY_API_GOOGLEMAPS": vai habilitar o uso do mapa no projeto.
 > \
-> VITE_SOME_BASE_URL = http://localhost:3000/partners: vai habilitar a rota de manipulação do json-server, sem isso não tem como cadastrar ou atualizar as lojas.
+> VITE_SOME_BASE_URL = ´http://localhost:3000/partners´: vai habilitar a rota de manipulação do json-server, sem isso não tem como cadastrar ou atualizar as lojas.
 
 *4. Inicie a aplicação (copie e cole o comando abaixo no prompt)*
 \
