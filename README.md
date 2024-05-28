@@ -7,6 +7,10 @@ O sistema também possibilita o cadastro e a atualização de algumas informaç�
 
 Além disso, o sistema faz uso da API do Google, permitindo a exibição de um mapa na tela. Nesse mapa, é possível visualizar a localização das lojas e obter algumas informações adicionais por meio de um marcador no mapa.
 
+> **Obs** O faturamento mensal e a taxa de conversão estão sendo gerados automaticamente
+
+https://github.com/AndersonS7/react-dashboard/assets/52304311/87a95e04-e120-4645-b2af-99ffe7635b55
+
 ## 💻 O que utilizei no projeto
 
 ### **Vite** 
@@ -89,6 +93,7 @@ Caso não tenha uma, use o link a seguir para conseguir uma. [API Google](https:
 *4. Inicie a aplicação (copie e cole o comando abaixo no prompt)*
 \
 ``
+
 npm run dev
 ``
 > Obs: por padrão, o vite vai usar o http://localhost:5173/
