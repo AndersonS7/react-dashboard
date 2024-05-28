@@ -70,6 +70,8 @@ Caso queira rodar o projeto em sua máquina, basta seguir os passos a seguir.
 
 *1. Clone o projeto para sua máquina*
 
+![01](https://github.com/AndersonS7/react-dashboard/assets/52304311/c4815524-4c7f-4a63-a22b-58b9037bd94b)
+
 *2. Instale as dependências do projeto*
 > Abra o projeto, em seguida vá até o prompt e cole o comando abaixo. <br/>
 `` 
