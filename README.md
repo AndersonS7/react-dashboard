@@ -91,15 +91,18 @@ Caso não tenha uma, use o link a seguir para conseguir uma [📓 Documentação
 ``
 npm run dev
 ``
-\
 > Obs: por padrão, o vite vai usar o http://localhost:5173/
 
 *5. Inicie o json-server (copie e cole o comando abaixo em um prompt separado do anterior)*
+\
 ``
 npm run backend
 ``
 
 *6. Acesse o sistema*
 > http://localhost:5173/
+
+## 📱 Onde me encontrar 
+[📓 Linkedin](https://www.linkedin.com/in/andersonsilva7/)
 
 
