@@ -76,7 +76,9 @@ Caso queira rodar o projeto em sua máquina, basta seguir os passos a seguir.
 > Abra o projeto, em seguida vá até o prompt e cole o comando abaixo. <br/>
 `` 
 npm install
-`` 
+``
+
+![02](https://github.com/AndersonS7/react-dashboard/assets/52304311/803489da-b95e-4277-b90e-e470d70a8a9f)
 
 *3. Crie o arquivo .env na raiz do projeto*
 > Em seguida, abra o arquivo .env e adicione as referências abaixo <br/>
