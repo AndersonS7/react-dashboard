@@ -72,6 +72,7 @@ Caso queira rodar o projeto em sua máquina, basta seguir os passos a seguir.
 
 ![01](https://github.com/AndersonS7/react-dashboard/assets/52304311/c4815524-4c7f-4a63-a22b-58b9037bd94b)
 
+
 *2. Instale as dependências do projeto*
 > Abra o projeto, em seguida vá até o prompt e cole o comando abaixo. <br/>
 `` 
@@ -79,6 +80,7 @@ npm install
 ``
 
 ![02](https://github.com/AndersonS7/react-dashboard/assets/52304311/803489da-b95e-4277-b90e-e470d70a8a9f)
+
 
 *3. Crie o arquivo .env na raiz do projeto*
 > Em seguida, abra o arquivo .env e adicione as referências abaixo <br/>
@@ -98,13 +100,17 @@ Caso não tenha uma, use o link a seguir para conseguir uma. [API Google](https:
 > \
 > VITE_SOME_BASE_URL = http://localhost:3000/partners: vai habilitar a rota de manipulação do json-server, sem isso não tem como cadastrar ou atualizar as lojas.
 
-![image](https://github.com/AndersonS7/react-dashboard/assets/52304311/34d55e21-4776-4d4d-9a49-fc4e2e18c7d5)
+![03](https://github.com/AndersonS7/react-dashboard/assets/52304311/34d55e21-4776-4d4d-9a49-fc4e2e18c7d5)
+
 
 *4. Inicie a aplicação (copie e cole o comando abaixo no prompt)*
 \
 ``
 npm run dev
 ``
+
+![04](https://github.com/AndersonS7/react-dashboard/assets/52304311/1050d2e5-5160-410e-a1b5-9e65113a8cfa)
+
 > Obs: por padrão, o vite vai usar o http://localhost:5173/
 
 *5. Inicie o json-server (copie e cole o comando abaixo em um prompt separado do anterior)*
