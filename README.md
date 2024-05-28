@@ -98,6 +98,8 @@ Caso não tenha uma, use o link a seguir para conseguir uma. [API Google](https:
 > \
 > VITE_SOME_BASE_URL = http://localhost:3000/partners: vai habilitar a rota de manipulação do json-server, sem isso não tem como cadastrar ou atualizar as lojas.
 
+![image](https://github.com/AndersonS7/react-dashboard/assets/52304311/34d55e21-4776-4d4d-9a49-fc4e2e18c7d5)
+
 *4. Inicie a aplicação (copie e cole o comando abaixo no prompt)*
 \
 ``
