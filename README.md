@@ -97,7 +97,6 @@ Caso não tenha uma, use o link a seguir para conseguir uma. [API Google](https:
 *4. Inicie a aplicação (copie e cole o comando abaixo no prompt)*
 \
 ``
-
 npm run dev
 ``
 > Obs: por padrão, o vite vai usar o http://localhost:5173/
