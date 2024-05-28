@@ -80,7 +80,7 @@ VITE_SOME_BASE_URL = http://localhost:3000/partners
 > 
 > VITE_SOME_API_KEY = "KEY_API_GOOGLEMAPS"
 > Substitua "KEY_API_GOOGLEMAPS" por sua chave api do Google
-Caso não tenha uma, use o link a seguir para conseguir uma [📓 Documentação](https://developers.google.com/maps)
+Caso não tenha uma, use o link a seguir para conseguir uma [ Google](https://developers.google.com/maps)
 
 > VITE_SOME_API_KEY = "KEY_API_GOOGLEMAPS": vai habilitar o uso do mapa no projeto.
 > \
